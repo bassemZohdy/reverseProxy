@@ -10,9 +10,11 @@ import java.util.List;
 
 @Service
 public class ItemsService {
-    @Autowired
-    @Qualifier("webClient3000")
-    private WebClient webClient;
+    private final WebClient webClient;
+
+    public ItemsService(WebClient webClient) {
+        this.webClient = webClient;
+    }
 
     List<ItemModel> listItems(){
         return webClient.get().uri("/items").retrieve().bodyToFlux(ItemModel.class).collectList().block();

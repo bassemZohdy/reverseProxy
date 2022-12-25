@@ -11,7 +11,7 @@ import reactor.netty.http.client.HttpClient;
 public class WebClientConfig {
 
     @Bean
-    public WebClient webClient3000(){
+    public WebClient webClient(){
         return WebClient.builder().baseUrl("http://localhost:3000").clientConnector(
                 new ReactorClientHttpConnector(
                         HttpClient.create().proxyWithSystemProperties())).build();
