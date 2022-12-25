@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/extServer/extServer.iml" filepath="$PROJECT_DIR$/extServer/extServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/reverseProxy.iml" filepath="$PROJECT_DIR$/.idea/reverseProxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reverseProxyApp/reverseProxyApp.iml" filepath="$PROJECT_DIR$/reverseProxyApp/reverseProxyApp.iml" />
+    </modules>
+  </component>
+</project>

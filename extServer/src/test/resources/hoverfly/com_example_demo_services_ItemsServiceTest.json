@@ -1,0 +1,103 @@
+{
+  "data" : {
+    "pairs" : [ {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/items"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "localhost:3000"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "body" : [ {
+          "matcher" : "exact",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "[\n  {\n    \"id\": 1,\n    \"name\": \"test\"\n  }\n]",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Access-Control-Allow-Credentials" : [ "true" ],
+          "Cache-Control" : [ "no-cache" ],
+          "Connection" : [ "keep-alive" ],
+          "Content-Length" : [ "43" ],
+          "Content-Type" : [ "application/json; charset=utf-8" ],
+          "Date" : [ "Sun, 25 Dec 2022 20:13:47 GMT" ],
+          "Etag" : [ "W/\"2b-Dwb4caZ4LRZ/ArcKTsAv82sDly8\"" ],
+          "Expires" : [ "-1" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Keep-Alive" : [ "timeout=5" ],
+          "Pragma" : [ "no-cache" ],
+          "Vary" : [ "Origin, Accept-Encoding" ],
+          "X-Content-Type-Options" : [ "nosniff" ],
+          "X-Powered-By" : [ "Express" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/items/1"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "localhost:3000"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "body" : [ {
+          "matcher" : "exact",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\n  \"id\": 1,\n  \"name\": \"test\"\n}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Access-Control-Allow-Credentials" : [ "true" ],
+          "Cache-Control" : [ "no-cache" ],
+          "Connection" : [ "keep-alive" ],
+          "Content-Length" : [ "31" ],
+          "Content-Type" : [ "application/json; charset=utf-8" ],
+          "Date" : [ "Sun, 25 Dec 2022 20:13:47 GMT" ],
+          "Etag" : [ "W/\"1f-+doFLYParQlWGTFlohoQ2worEnY\"" ],
+          "Expires" : [ "-1" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Keep-Alive" : [ "timeout=5" ],
+          "Pragma" : [ "no-cache" ],
+          "Vary" : [ "Origin, Accept-Encoding" ],
+          "X-Content-Type-Options" : [ "nosniff" ],
+          "X-Powered-By" : [ "Express" ]
+        }
+      }
+    } ],
+    "globalActions" : {
+      "delays" : [ ]
+    }
+  },
+  "meta" : {
+    "schemaVersion" : "v5.1",
+    "hoverflyVersion" : "v1.3.1",
+    "timeExported" : "2022-12-26T00:13:47+04:00"
+  }
+}
